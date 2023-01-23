@@ -41,7 +41,7 @@ function game()
     {
         var playerInput = prompt("Enter Rock, Paper or Scissors to begin the game!");
         var roundResult = playRound(playerInput, getComputerChoice());
-        console.log(roundResult);
+        //console.log(roundResult);
 
         if (roundResult.includes("recongize")) return "The players input was not recongized, please reload the page...";
 
@@ -54,4 +54,12 @@ function game()
     else return "The player LOST!";
 }
 
-console.log(game());
+const btnRock = document.getElementById('btnRock');
+const btnPaper = document.getElementById('btnPaper');
+const btnScissors = document.getElementById('btnScissors');
+
+
+
+console.log(btnRock);
+console.log(btnPaper);
+console.log(btnScissors);
